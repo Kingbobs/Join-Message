@@ -18,16 +18,16 @@ class main extends PluginBase implements Listener
     {
        $player = $event->getPlayer();
        $name = $player->getName();
-    $event->setJoinMessage("\n\n§eWelcome To This Amazing Server§6 " . $name . "§e Have Fun\n\n");
+    $event->setJoinMessage("\n\n§eWelcome§6 " . $name . "§e TO This Amazing Server\n\n");
 
     }
     public function onQuit(PlayerQuitEvent $event){
         $player = $event->getPlayer();
         $name = $player->getName();
         if ($player->isOP()){
-            $event->setQuitMessage("\n\n§4server §6>§2> §r" . $name . "Im Sorry To See You Go!\n\n");
-        } else
-        $event->setQuitMessage("\n\n§4server §6>§2> §r" . $name . "We WIll Miss You!\n\n"); 
+            $event->setQuitMessage("\n\n§4server §6>§2> §r" . $name . "Sad To See You Go!\n\n");
+        } else {
+        $event->setQuitMessage("\n\n§4server §6>§2> §r" . $name . "Sad To See You Go\n\n"); 
         }
     }
 }
