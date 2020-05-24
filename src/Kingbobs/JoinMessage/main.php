@@ -26,8 +26,8 @@ class main extends PluginBase implements Listener
         $name = $player->getName();
         if ($player->isOP()){
             $event->setQuitMessage("\n\n§4server §6>§2> §r" . $name . "Im Sorry To See You Go!\n\n");
-        } else 
-        $event->setQuitMessage("\n\n§4server §6>§2> §r" . $name . "We WIll Miss You!!\n\n"); 
+        } else
+        $event->setQuitMessage("\n\n§4server §6>§2> §r" . $name . "We WIll Miss You!\n\n"); 
         }
     }
 }
